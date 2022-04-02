@@ -8,6 +8,10 @@ App = {
     return App.initWeb3();
   },
 
+  /*initWeb3: async function(){
+    App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
+    return App.initContract();
+  },*/
   initWeb3: function() {
     // TODO: refactor conditional
     if (typeof web3 !== 'undefined') {
