@@ -8,12 +8,16 @@
   },
   "scripts": {
     "dev": "lite-server",
+    "build":"node build.js",
+    "deploy":"gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "lite-server": "^2.3.0",
+    "recursive-copy": "^2.0.14",
     "truffle": "5.0.0-beta.0"
   }
 }
