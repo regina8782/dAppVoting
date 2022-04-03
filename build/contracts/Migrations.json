@@ -1470,12 +1470,21 @@
     "5777": {
       "events": {},
       "links": {},
+<<<<<<< HEAD
       "address": "0x6F7c1AC53f27b00f0B010B59ADa5cbf632C468be",
       "transactionHash": "0x0a7576f42b5424b21b6dc00a0b92938ae52492ad0692ac69571c832c6acd8bd2"
     }
   },
   "schemaVersion": "3.4.6",
   "updatedAt": "2022-04-03T15:26:11.466Z",
+=======
+      "address": "0xaFEE45f29B8082FD3E3f37d912004dB8aB22f54E",
+      "transactionHash": "0x6dc2f33981bdcda9db6e15d51f57fc2229d706465bdd1df1ff950bb5e2c7f539"
+    }
+  },
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-04-02T17:15:59.905Z",
+>>>>>>> parent of c6be3e6 (finish lesson)
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
