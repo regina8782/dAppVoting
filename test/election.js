@@ -32,6 +32,9 @@ contract("Election", function(accounts){
             web3.eth.getAccounts().then(function(acc){accounts = acc});
             return electionInstance.vote(candidateId, {from :accounts[0]}); //account who is voting  
         }).then(function(receipt){
+            assert.equal(receipt.logs.length, 1, "an event was triggered");
+            assert.equal(receipt.logs[0].event, "votedEvent", "the event type is correct");
+            assert.equal(receipt.logs[0].args._candidateId.toNumber(), candidateId, "the candidate id is correct");
             return electionInstance.voters(accounts[0]);
         }).then(function(voted){
             assert(voted, "the voter was marked as voted"); //bollean that the account is voting or not
